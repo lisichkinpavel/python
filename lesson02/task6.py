@@ -37,4 +37,3 @@ my_dict = {
     'ед': count_list,
 }
 print(my_dict)
-
