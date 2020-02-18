@@ -5,5 +5,5 @@ def fact_gen(n):
         yield res
 
 
-for idx in fact_gen(15):
-    print(idx)
+for idx, val in enumerate(fact_gen(15), 1):
+    print(f'{idx}! : {val}')
