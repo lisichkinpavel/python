@@ -1,4 +1,8 @@
-from functools import reduce
-sourse_list = [i for i in range(100, 1001) if i % 2 == 0]
-print(sourse_list)
-print(reduce(lambda x, y: x * y, sourse_list))
+import random
+with open('task5_text.txt', 'w', encoding='utf-8') as f_write:
+    number_list = [random.randint(1, 99) for i in range(10)]
+    f_write.write(' '.join(map(str, number_list)))
+
+with open('task5_text.txt', 'r', encoding='utf-8') as f_read:
+    data = f_read.read().split()
+    print(f'Сумма всех чисел: {sum(list(map(int, data)))}')
